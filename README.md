@@ -6,9 +6,9 @@ App that allows restaurants, hypermarkets...to sell their food leftovers of the 
 
 ## Contributors
 Yeol Yang，Hanyang University，yeolyang77@gmail.com  
-Daphnée Correia，Hanyang University，daphnee.correia@edu.dev inci.fr  
-Edouard Maurice Hanyang University，edouard.maurice@edu.devin ci.fr  
-Pacôme Manceaux Hanyang University，pacome.manceaux@gm ail.com  
+Daphnée Correia，Hanyang University，daphnee.correia@edu.devinci.fr  
+Edouard Maurice Hanyang University，edouard.maurice@edu.devinci.fr  
+Pacôme Manceaux Hanyang University，pacome.manceaux@gmail.com  
 
 
 ## Links
