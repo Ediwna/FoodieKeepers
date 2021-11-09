@@ -1,5 +1,5 @@
 # FoodieKeepers
-![](https://github.com/Ediwna/FoodieKeepers/blob/main/rec/wasteFood.jpg)  
+![wasteFood](https://github.com/Ediwna/FoodieKeepers/blob/main/rec/wasteFood.jpg)  
 App that allows restaurants, hypermarkets...to sell their food leftovers of the day at a cheaper price to customer in order to avoid food wasting.
 
 ## Introduction
