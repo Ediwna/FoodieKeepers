@@ -8,7 +8,7 @@ GUI mockups [proto.io](https://pr.to/UODON0/) <br>
 Paper [FoodieKeeper](https://github.com/Ediwna/FoodieKeepers/blob/main/Document/FoodieKeeper_finalPaper.pdf)<br>
 Youtube demo [demoVideo](https://youtu.be/zZdBhHHDMr8)<br>
 
-## Contributors
+### Contributors
 * Yeol Yang，Hanyang University，yeolyang77@gmail.com  
 * Daphnée Correia，Hanyang University，daphnee.correia@edu.devinci.fr  
 * Edouard Maurice Hanyang University，edouard.maurice@edu.devinci.fr  
