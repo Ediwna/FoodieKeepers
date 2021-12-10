@@ -70,8 +70,7 @@ There is also a sliding menu on the top left of the screen. This menu has three 
 The `My account` section will allow the user to modify the information he has previously filled. He will also be able to register a credit card for the payment of his future orders. The `Order history` section will provide the user a summary of all the orders he has made, with the restaurant’s name, the items purchased, the price, the date of the purchase…Finally, the `Log out` section will allow the user to disconnect from his account.<br>
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/account.png" width="280" height="450" alt="Account page"/> 
 
-## IV Methodology
-We have chosen a more interactive approach. Based on multiples mobile apps, the purpose is to let the user go to the data he is looking for. We didn’t use a lot of page in the UI. Thanks to that, the data remains limited and is not too heavy. This allows us to have numerous users, and to suggest many restaurants also. Moreover, managing the data is easier, which helps us to simplify the code. <br>## IV Overall Architecture <br>
+## IV Overall Architecture <br>
 
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/FoodieKeepers_Framework.png" alt="FoodieKeepers Framework"/> <br> 
 <br>
