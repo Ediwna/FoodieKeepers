@@ -51,7 +51,7 @@ Finally, the user will have to fill one last step. He will have to choose his fa
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/buyer_select.png" width="280" height="450" alt="buyer select category page"/> 
 
 #### Seller side
-By clicking on the “I want to sell” button, the user will be led to the seller part of the application. The first steps of the registration are similar to the buyer side registration. <br>
+By clicking on the `I want to sell` button, the user will be led to the seller part of the application. The first steps of the registration are similar to the buyer side registration. <br>
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/seller_fill_info.png" width="280" height="450" alt="seller fill information page"/> <br>
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/seller_fill_info2.png" width="280" height="450" alt="seller fill information2 page"/> 
 
@@ -67,7 +67,7 @@ Last category is for those who are tired of eating the same thing and want to ex
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/category.png" width="900" height="450" alt="category page"/> <br>
 
 There is also a sliding menu on the top left of the screen. This menu has three categories: `My account`, `Order history`, `Log out`.
-The “My account” section will allow the user to modify the information he has previously filled. He will also be able to register a credit card for the payment of his future orders. The  Order history  section will provide the user a summary of all the orders he has made, with the restaurant’s name, the items purchased, the price, the date of the purchase…Finally, the “Log out” section will allow the user to disconnect from his account.<br>
+The “My account” section will allow the user to modify the information he has previously filled. He will also be able to register a credit card for the payment of his future orders. The  Order history  section will provide the user a summary of all the orders he has made, with the restaurant’s name, the items purchased, the price, the date of the purchase…Finally, the `Log out` section will allow the user to disconnect from his account.<br>
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/account.png" width="280" height="450" alt="Account page"/> 
 
 ## IV Methodology
