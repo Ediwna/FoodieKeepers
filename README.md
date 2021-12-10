@@ -32,5 +32,13 @@ Coding envrionment -- `Microsoft Visual Studio` <br>
 Main platform -- `Android applicatopn` <br>
 Database -- `Firebase` <br>
 
+## III Specifications
+### A. Creating an account
+
+#### Buyer side
+
+#### Seller side
+
+### B. Making and track an order
 
 
