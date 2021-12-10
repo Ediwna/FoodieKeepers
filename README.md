@@ -91,7 +91,7 @@ Considering the backend, our firebase realtime database is called using its asso
 ```c#
  public class FirebaseHelper
     {
-        public static FirebaseClient firebase = new FirebaseClient("https://foodiekeepersapp-default-rtdb.firebaseio.com/");
+        public static FirebaseClient firebase = new FirebaseClient("Our Firebase Realtime Database URL");
 
         //Read All
         public static async Task<List<Users>> GetAllUser()
