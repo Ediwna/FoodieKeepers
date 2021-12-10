@@ -5,7 +5,8 @@ App that allows restaurants, hypermarkets...to sell their food leftovers of the 
 ## Hanyang Unversity Software Engineering project
 ### Quick links
 GUI mockups [proto.io](https://pr.to/UODON0/) <br>
-Youtube demo [demoVideo](https://youtu.be/zZdBhHHDMr8)
+Paper [FoodieKeeper](https://github.com/Ediwna/FoodieKeepers/blob/main/Document/FoodieKeeper_finalPaper.pdf)<br>
+Youtube demo [demoVideo](https://youtu.be/zZdBhHHDMr8)<br>
 
 ## Contributors
 * Yeol Yang，Hanyang University，yeolyang77@gmail.com  
