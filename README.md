@@ -28,7 +28,8 @@ The unfinished meals after a grand party or activity, the food that cannot be so
 
 ## II Development envrionment 
 Main language -- `C#` & `XAML` <br>
-Main platform -- `Microsoft Visual Studio` <br>
+Coding envrionment -- `Microsoft Visual Studio` <br>
+Main platform -- `Android applicatopn` <br>
 Database -- `Firebase` <br>
 
 
