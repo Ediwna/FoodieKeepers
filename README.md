@@ -63,7 +63,7 @@ The second category is “Around me”. This category will open a map showing al
 The third one is “Short in time” category. This one will show the user the restaurants with the shortest pick-up time so that the user can enjoy a meal fast if he has a sudden craving or needs to eat fast to go back to work for example.<br>
 The fourth category is “Grocery shopping”. Clicking on this category will allow the user to see which store offers food items around him. <br>
 Last category is for those who are tired of eating the same thing and want to experience something new. The “Mystery choice” category will propose a restaurant to the user. The selection criteria will be the user’s position (it is important to not be too far, for the same reasons as mentioned above), the user’s preferences filled during the creation of his account and his former orders to avoid suggesting something he has already tried. <br>
-<img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/category.png" width="280" height="450" alt="category page"/> <br>
+<img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/category.png" width="500" height="450" alt="category page"/> <br>
 
 There is also a sliding menu on the top left of the screen. This menu has three categories: “My account”, “Order history”, “Log out”.
 The “My account” section will allow the user to modify the information he has previously filled. He will also be able to register a credit card for the payment of his future orders. The “Order history” section will provide the user a summary of all the orders he has made, with the restaurant’s name, the items purchased, the price, the date of the purchase…Finally, the “Log out” section will allow the user to disconnect from his account.<br>
