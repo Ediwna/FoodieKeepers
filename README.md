@@ -71,7 +71,9 @@ The `My account` section will allow the user to modify the information he has pr
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/account.png" width="280" height="450" alt="Account page"/> 
 
 ## IV Methodology
+We have chosen a more interactive approach. Based on multiples mobile apps, the purpose is to let the user go to the data he is looking for. We didn’t use a lot of page in the UI. Thanks to that, the data remains limited and is not too heavy. This allows us to have numerous users, and to suggest many restaurants also. Moreover, managing the data is easier, which helps us to simplify the code. <br>
 
+  
 
 ## V Conclusion
 This is our first project in Software Engineering. From the beginning, we wanted to do something really useful for the first time. The idea of Foodie Keepers was quickly found. The purpose was to make software that would fit our competencies but would also help some people. There are only a few examples of this app in the world, and none in Korea. It took us a lot of time to understand some concepts in this course, and a lot of mistakes were made in choosing the components. <br> 
