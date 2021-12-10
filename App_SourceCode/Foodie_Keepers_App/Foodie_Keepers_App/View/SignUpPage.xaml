@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foodie_Keepers_App.View.SignUpPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20"
+                         Margin="25">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="8*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="backarrow.png"
+                       HeightRequest="25"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="TapBackArrow" 
+                                              Tapped="OnTapGestureRecognizerTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label TextColor="#80b971"
+                           Grid.Column="1"
+                           Text="SIGN UP"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           Margin="30,0,30,0" />
+                </Grid>
+               
+                <Frame HasShadow="True"
+                       Padding="25"
+                       Margin="0,30,0,0">
+                    <StackLayout>
+
+                        <Label Text="Create An Account"
+                               FontAttributes="Bold"
+                               FontSize="Title"
+                               HorizontalOptions="Center"
+                               TextColor="#80b971" />
+
+                        <Entry x:Name="Emailentery" 
+                               Placeholder="Email" 
+                               Text="{Binding Email}" 
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               Keyboard="Email"/>
+
+                        <Entry x:Name="passwordentery" 
+                               Placeholder="Password" 
+                               Text="{Binding Password}"    
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"/>
+
+                        <Entry x:Name="cfmpasswordentery" 
+                               Placeholder="Confirm Password" 
+                               Text="{Binding ConfirmPassword}"   
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True" />
+
+                        <Label Margin="20,0,20,0"
+                               FontSize="Small"
+                               HorizontalTextAlignment="Center"
+                               TextColor="#80574D"
+                               Text="By creating an account you agree to our Terms of Service and Privacy Policy" />
+                    </StackLayout>
+                </Frame>
+                <Button Text="CONTINUE"
+                        TextColor="White"
+                        BackgroundColor="#80b971"
+                        Command="{Binding SignUpCommand}" 
+                        x:Name="signup" />
+                <Label Text="Already have an account?"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#80574D" />
+                <Button Text="Login"
+                        BackgroundColor="#80b971"
+                        TextColor="White"
+                        x:Name="BtnLogin" 
+                        Clicked="LoginButton_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

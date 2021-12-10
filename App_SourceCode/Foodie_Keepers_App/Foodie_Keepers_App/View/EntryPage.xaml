@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foodie_Keepers_App.View.EntryPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Foodie Keepers"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="65"
+                FontAttributes="Italic"
+                TextColor="DarkGreen"/>
+
+                <Image Source="User_icon.png"
+                   WidthRequest="190"/>
+
+                <Button Text="Log In"
+                    TextColor="Black"
+                    FontSize="17"
+                    BackgroundColor="#80b971"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnButtonClicked1"/>
+
+                <Button Text="Create an account"
+                    FontSize="17"
+                    TextColor="Black"
+                    BackgroundColor="#80b971"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnButtonClicked2"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

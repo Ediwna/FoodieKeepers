@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foodie_Keepers_App.View.OrderCancelPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#80b971"
+                   Padding="20" CornerRadius="0">
+                <Label Text="Successfully canceled !" 
+                       HorizontalTextAlignment="Center"
+                       TextColor="White" 
+                       FontSize="40"
+                       />
+            </Frame>
+
+            <Image Source="order_cancel.png"
+                   Aspect="AspectFill"
+                   />
+
+            <Label Text="You have successfully canceled!"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   />
+
+            <Button Text="Return"
+                    BackgroundColor="#80b971"
+                    WidthRequest="100"
+                    MinimumHeightRequest="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand"
+                    Opacity="0.7"
+                    CornerRadius="20"
+                    Clicked="Button_Clicked"
+                    />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

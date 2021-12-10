@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foodie_Keepers_App.View.OrderSuccessPage" 
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="8*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="backarrow.png"
+                           
+                       HeightRequest="25"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="TapBackArrow" 
+                                              Tapped="OnTapGestureRecognizerTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+                <Frame BackgroundColor="#80b971"
+                   Padding="20" CornerRadius="0">
+                    <Label Text="Order Succeded" 
+                       HorizontalTextAlignment="Center"
+                       TextColor="White" 
+                       FontSize="40"
+                       />
+                </Frame>
+
+                <Image Source="order_success.png"
+                   Aspect="AspectFill"
+                   />
+
+                <Label Text="You successfully ordered! Don't forget to take your meal before the restaurant closes!"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   />
+
+                <Entry Placeholder="Please enter your phone number" 
+                   Keyboard="Telephone"
+                   />
+
+
+                <Button Text="Cancel"
+                    BackgroundColor="#80b971"
+                    WidthRequest="100"
+                    MinimumHeightRequest="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand"
+                    Opacity="0.7"
+                    CornerRadius="20"
+                    Clicked="Button_Clicked"
+                    />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
