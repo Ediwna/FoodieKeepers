@@ -35,7 +35,7 @@ Database -- `Firebase` <br>
 ## III Specifications
 ### A. Creating an account
 The user is provided with two choices: `log-in` or `create an account`.  <br>
-<img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/signin_login.png" width="200" height="200" alt="sign in & login page"/>
+<img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/signin_login.png" width="200" height="500" alt="sign in & login page"/>
 
 After clicking on this button, the user will be moved to another page which will let him choose if he wants to buy or sell products on the app. <br>
 ![](https://github.com/Ediwna/FoodieKeepers/blob/main/rec/buyer_seller.png)
