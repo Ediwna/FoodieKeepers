@@ -4,7 +4,7 @@ App that allows restaurants, hypermarkets...to sell their food leftovers of the 
 
 ## Hanyang Unversity Software Engineering project
 ### Quick links
-GUI mockups [proto.io](https://pr.to/UODON0/)
+GUI mockups [proto.io](https://pr.to/UODON0/) <br>
 Youtube demo [demoVideo](https://youtu.be/zZdBhHHDMr8)
 
 ## Contributors
