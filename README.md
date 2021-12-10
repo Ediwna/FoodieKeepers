@@ -71,7 +71,131 @@ The `My account` section will allow the user to modify the information he has pr
 <img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/account.png" width="280" height="450" alt="Account page"/> 
 
 ## IV Methodology
-We have chosen a more interactive approach. Based on multiples mobile apps, the purpose is to let the user go to the data he is looking for. We didn’t use a lot of page in the UI. Thanks to that, the data remains limited and is not too heavy. This allows us to have numerous users, and to suggest many restaurants also. Moreover, managing the data is easier, which helps us to simplify the code. <br>
+We have chosen a more interactive approach. Based on multiples mobile apps, the purpose is to let the user go to the data he is looking for. We didn’t use a lot of page in the UI. Thanks to that, the data remains limited and is not too heavy. This allows us to have numerous users, and to suggest many restaurants also. Moreover, managing the data is easier, which helps us to simplify the code. <br>## IV Overall Architecture <br>
+
+<img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/FoodieKeepers_Framework.png" alt="FoodieKeepers Framework"/> <br> 
+<br>
+The overall architecture of Foodie Keepers can be represented in two main modules that are the frontend and the backend. The frontend brings together the user experience on Android/IOS with the graphical interface and user interaction supported by the Xamarin framework.<br>
+ <br>
+The backend is composed of a server linked to a database. When a user logs in, adds a product or places an order, a request is sent to the server. The server thus consults the database to access existing data or to add new data and sends the necessary information back to the frontend. <br>
+ <br>
+For the backend, we firstly made the choice of Microsoft Azure as the closest environment working with Micorsoft.Net. However, due to its complexity and cost, we turned to Google's Firebase. Firebase is world-renowned and provides quick and easy access to a real-time database. Provided the installation of a nugget package, its use is convenient with our development environment. <br>
+
+## V Implementation
+<img src= "https://github.com/Ediwna/FoodieKeepers/blob/main/rec/AppCode.png" alt="Application Code"/> <br> <br>
+Our Visual Studios solution is divided into three projects. A common project gathering the vast majority of the code and two specific projects corresponding to the IOS and Android platforms. The specific projects refer to the core one and allow to compile in the native language of each platform. <br>
+ <br>
+The application launches and the first page opens from the .cs code associated with the App.xaml page. There is then a subdivision into 3 folders. View, grouping the graphical interfaces of each page in Xaml, ViewModels translating the behaviour of our pages and Models translating the key concepts of our application such as users. <br>
+ <br>
+Considering the backend, our firebase realtime database is called using its associated URL. To make its use more convenient, we created a FirebaseHelper.cs class in our ViewModels folder comprising the funcions interacting with the database. For the moment, we have been able to use it for our authentication function with operations such as creating an account, deleting it or changing information. <br>
+ <br>
+```c#
+ public class FirebaseHelper
+    {
+        public static FirebaseClient firebase = new FirebaseClient("https://foodiekeepersapp-default-rtdb.firebaseio.com/");
+
+        //Read All
+        public static async Task<List<Users>> GetAllUser()
+        {
+            try
+            {
+                var userlist = (await firebase
+                .Child("Users")
+                .OnceAsync<Users>()).Select(item =>
+                new Users
+                {
+                    Email = item.Object.Email,
+                    Password = item.Object.Password
+                }).ToList();
+                return userlist;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return null;
+            }
+        }
+
+        //Read 
+        public static async Task<Users> GetUser(string email)
+        {
+            try
+            {
+                var allUsers = await GetAllUser();
+                await firebase
+                .Child("Users")
+                .OnceAsync<Users>();
+                return allUsers.Where(a => a.Email == email).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return null;
+            }
+        }
+
+        //Inser a user
+        public static async Task<bool> AddUser(string email, string password)
+        {
+            try
+            {
+
+
+                await firebase
+                .Child("Users")
+                .PostAsync(new Users() { Email = email, Password = password });
+                return true;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return false;
+            }
+        }
+
+        //Update 
+        public static async Task<bool> UpdateUser(string email, string password)
+        {
+            try
+            {
+
+
+                var toUpdateUser = (await firebase
+                .Child("Users")
+                .OnceAsync<Users>()).Where(a => a.Object.Email == email).FirstOrDefault();
+                await firebase
+                .Child("Users")
+                .Child(toUpdateUser.Key)
+                .PutAsync(new Users() { Email = email, Password = password });
+                return true;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return false;
+            }
+        }
+
+        //Delete User
+        public static async Task<bool> DeleteUser(string email)
+        {
+            try
+            {
+
+
+                var toDeletePerson = (await firebase
+                .Child("Users")
+                .OnceAsync<Users>()).Where(a => a.Object.Email == email).FirstOrDefault();
+                await firebase.Child("Users").Child(toDeletePerson.Key).DeleteAsync();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return false;
+            }
+        }
+```
 
   
 
