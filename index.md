@@ -6,6 +6,7 @@ App that allows restaurants, hypermarkets...to sell their food leftovers of the 
 ### Quick links
 * GUI mockups [proto.io](https://pr.to/UODON0/) <br>
 * Paper [FoodieKeeper](https://github.com/Ediwna/FoodieKeepers/blob/main/Document/FoodieKeeper_finalPaper.pdf)<br>
+* Power Point [Presentation](https://github.com/Ediwna/FoodieKeepers/blob/main/Document/PPT%20presentation.pptx) <br>
 * Youtube demo [demoVideo](https://youtu.be/zZdBhHHDMr8)<br>
 
 ### Contributors
