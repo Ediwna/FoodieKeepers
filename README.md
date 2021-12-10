@@ -26,4 +26,10 @@ The unfinished meals after a grand party or activity, the food that cannot be so
   * [Phenix](https://phenixbyonthelist.com/zh/) Phenix mobile app gives you the chance to put an end to food waste and buy food at a discounted price from our trusted partners. <br>
   * [No food waste](https://nofoodwaste.org/)No Food Waste is a movement turned NGO started by Padmanaban Gopalan and his friends Dinesh manickam and Sudhakar Mohan to get rid of the problem of hunger. <br>
 
-## II 
+## II Development envrionment 
+Main language -- `C#` & `XAML` <br>
+Main platform -- `Microsoft Visual Studio` <br>
+Database -- `Firebase` <br>
+
+
+
