@@ -199,7 +199,7 @@ Considering the backend, our firebase realtime database is called using its asso
 
   
 
-## V Conclusion
+## VI Conclusion
 This is our first project in Software Engineering. From the beginning, we wanted to do something really useful for the first time. The idea of Foodie Keepers was quickly found. The purpose was to make software that would fit our competencies but would also help some people. There are only a few examples of this app in the world, and none in Korea. It took us a lot of time to understand some concepts in this course, and a lot of mistakes were made in choosing the components. <br> 
 A big part of our work was the research. We had to look out for numerous tutorials and examples on the internet. For some of our weekly meetings, we had to explain what we found and suggest some components. To make sure we don’t spend too much time and effort on the same parts. We divided the project into different tasks for each of us. Every weekly meeting was there to see where we were on each of them and decide our next step. More than often, we also added multiples meeting in one week.  <br> 
 Our biggest difficulty was the back-end server and the database. At first, we tried to use AWS. One of our members had little experience of using this. It turned out that most of the app on Xamarin don’t use AWS. All the examples of a food ordering app used mostly Microsoft Azure. We chose then to use this one. However, Azure is a very complex back-end server. It was too time-consuming to understand how it works. On the advice of the teacher, we took Firebase, a much easier back-end server, using a real-time database. Our functions were created by using this back-end server.<br> 
